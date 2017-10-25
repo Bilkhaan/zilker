@@ -3,7 +3,7 @@
 #
 # A channel is created from a Connection.
 # so the uid is delegated to the Connection
-class MeshRelayChannel < ApplicationCable::Channel
+class ZilkerChannel < ApplicationCable::Channel
   def subscribed
     stop_all_streams
     stream_from broadcasting_name
